@@ -1,0 +1,6 @@
+migrations
+
+.env
+.test.env
+
+db
