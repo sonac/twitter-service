@@ -22,3 +22,11 @@ Postgres host is not needed as its being set inside docker-compose but you will 
 ## Testing
 
 For testing properly create virtual environment with all packages installed (you can use `pyenv` for that purpose) and run `python -m pytest` to run unit tests.
+
+## Using
+
+Currenly there are fpllowing endpoints in app:
+
+`/fetch` for POST requests with supplied data in form of username e.g. `curl -d "user=bbcnews" -X POST 0.0.0.0:5000/fetch` 
+`/avg-length/<username>` to get average tweet length for user. If no user supplied - would be returned average overall
+`/coolest-follower/<username>` get follower with biggest amount of followers for user
